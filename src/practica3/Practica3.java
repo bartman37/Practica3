@@ -22,6 +22,22 @@ public class Practica3 extends javax.swing.JFrame {
      */
     public Practica3() {
         initComponents();
+        jToggleButton1.setEnabled(false);
+        jToggleButton2.setEnabled(false);
+        jToggleButton3.setEnabled(false);
+        jToggleButton4.setEnabled(false);
+        jToggleButton5.setEnabled(false);
+        jToggleButton6.setEnabled(false);
+        jToggleButton7.setEnabled(false);
+        jToggleButton8.setEnabled(false);
+        jToggleButton9.setEnabled(false);
+        jToggleButton10.setEnabled(false);
+        jToggleButton11.setEnabled(false);
+        jToggleButton12.setEnabled(false);
+        jToggleButton13.setEnabled(false);
+        jToggleButton14.setEnabled(false);
+        jToggleButton15.setEnabled(false);
+        jToggleButton16.setEnabled(false);
     }
 
     /**
@@ -38,6 +54,8 @@ public class Practica3 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
@@ -58,6 +76,9 @@ public class Practica3 extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +91,14 @@ public class Practica3 extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Z.png"))); // NOI18N
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Z.png"))); // NOI18N
+
+        jLabel7.setMaximumSize(new java.awt.Dimension(64, 64));
+        jLabel7.setMinimumSize(new java.awt.Dimension(64, 64));
+        jLabel7.setPreferredSize(new java.awt.Dimension(64, 64));
+
+        jLabel8.setMaximumSize(new java.awt.Dimension(64, 64));
+        jLabel8.setMinimumSize(new java.awt.Dimension(64, 64));
+        jLabel8.setPreferredSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -84,7 +113,11 @@ public class Practica3 extends javax.swing.JFrame {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,6 +125,8 @@ public class Practica3 extends javax.swing.JFrame {
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -204,25 +239,42 @@ public class Practica3 extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Botón 1");
+        jButton1.setText("Empezar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Botón 2");
+        jButton2.setText("Recordar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Comprobar");
+
+        jLabel5.setText("Aciertos");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(13, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,7 +283,13 @@ public class Practica3 extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -241,7 +299,7 @@ public class Practica3 extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -258,542 +316,176 @@ public class Practica3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    String letrasRecordadas = "";
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Random generadorNum = new Random();
-        int numGenerado1 = generadorNum.nextInt(16)+1;
-        int numGenerado2 = generadorNum.nextInt(16)+1;
-        int numGenerado3 = generadorNum.nextInt(16)+1;
-        int numGenerado4 = generadorNum.nextInt(16)+1;
-        String secuenciaLetras = String.valueOf(numGenerado1 + "" + numGenerado2 + "" + numGenerado3 + "" + numGenerado4);
-        String letra = "";
+      
+        jToggleButton1.setEnabled(false);
+        jToggleButton2.setEnabled(false);
+        jToggleButton3.setEnabled(false);
+        jToggleButton4.setEnabled(false);
+        jToggleButton5.setEnabled(false);
+        jToggleButton6.setEnabled(false);
+        jToggleButton7.setEnabled(false);
+        jToggleButton8.setEnabled(false);
+        jToggleButton9.setEnabled(false);
+        jToggleButton10.setEnabled(false);
+        jToggleButton11.setEnabled(false);
+        jToggleButton12.setEnabled(false);
+        jToggleButton13.setEnabled(false);
+        jToggleButton14.setEnabled(false);
+        jToggleButton15.setEnabled(false);
+        jToggleButton16.setEnabled(false);
 
-            switch (numGenerado1){
-                case 1:
-                    letra = "A";
-                try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 2:
-                    letra = "B";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/B.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 3:
-                    letra = "C";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/C.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 4:
-                    letra = "D";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/D.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 5:
-                    letra = "E";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/E.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 6:
-                    letra = "F";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/F.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 7:
-                    letra = "G";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/G.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 8:
-                    letra = "H";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/H.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 9:
-                    letra = "I";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/I.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 10:
-                    letra = "J";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/J.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 11:
-                    letra = "K";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/K.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 12:
-                    letra = "L";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/L.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 13:
-                    letra = "M";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/M.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 14:
-                    letra = "N";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/N.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 15:
-                    letra = "O";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/O.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 16:
-                    letra = "P";
-                    try {
-                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/P.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-            }    
-        
+        jToggleButton1.setSelected(false);
+        jToggleButton2.setSelected(false);
+        jToggleButton3.setSelected(false);
+        jToggleButton4.setSelected(false);
+        jToggleButton5.setSelected(false);
+        jToggleButton6.setSelected(false);
+        jToggleButton7.setSelected(false);
+        jToggleButton8.setSelected(false);
+        jToggleButton9.setSelected(false);
+        jToggleButton10.setSelected(false);
+        jToggleButton11.setSelected(false);
+        jToggleButton12.setSelected(false);
+        jToggleButton13.setSelected(false);
+        jToggleButton14.setSelected(false);
+        jToggleButton15.setSelected(false);
+        jToggleButton16.setSelected(false);
+
+        try {
+            Random generadorNum = new Random();
+            String numeroGenerado = "";
+            letrasRecordadas = numeroGenerado;
+            String URL = "";
+            int contador;
             
-            switch (numGenerado2){
-                case 1:
-                    letra = "A";
-                try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+            for (contador = 0; contador <= 4; contador++) {
+                numeroGenerado += (char) ('A' + generadorNum.nextInt(15));
+
+                for (contador = 0; contador < numeroGenerado.length(); contador++) {
+                    URL = "/imagenes/" + numeroGenerado.charAt(contador) + ".png";
+                    if (contador == 0) {
+                        jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                    }
+                    if (contador == 1) {
+                        jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                    }
+                    if (contador == 2) {
+                        jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                    }
+                    if (contador == 3) {
+                        jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                    }
+                }
             }
-                    break;
-                case 2:
-                    letra = "B";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/B.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 3:
-                    letra = "C";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/C.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 4:
-                    letra = "D";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/D.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 5:
-                    letra = "E";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/E.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 6:
-                    letra = "F";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/F.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 7:
-                    letra = "G";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/G.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 8:
-                    letra = "H";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/H.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 9:
-                    letra = "I";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/I.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 10:
-                    letra = "J";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/J.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 11:
-                    letra = "K";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/K.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 12:
-                    letra = "L";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/L.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 13:
-                    letra = "M";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/M.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 14:
-                    letra = "N";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/N.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 15:
-                    letra = "O";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/O.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 16:
-                    letra = "P";
-                    try {
-                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/P.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-            }
-            
-            switch (numGenerado3){
-                case 1:
-                    letra = "A";
-                try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 2:
-                    letra = "B";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/B.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 3:
-                    letra = "C";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/C.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 4:
-                    letra = "D";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/D.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 5:
-                    letra = "E";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/E.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 6:
-                    letra = "F";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/F.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 7:
-                    letra = "G";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/G.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 8:
-                    letra = "H";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/H.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 9:
-                    letra = "I";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/I.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 10:
-                    letra = "J";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/J.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 11:
-                    letra = "K";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/K.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 12:
-                    letra = "L";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/L.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 13:
-                    letra = "M";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/M.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 14:
-                    letra = "N";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/N.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 15:
-                    letra = "O";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/O.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 16:
-                    letra = "P";
-                    try {
-                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/P.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-            }
-              
-            
-             switch (numGenerado4){
-                case 1:
-                    letra = "A";
-                try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 2:
-                    letra = "B";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/B.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 3:
-                    letra = "C";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/C.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 4:
-                    letra = "D";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/D.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 5:
-                    letra = "E";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/E.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 6:
-                    letra = "F";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/F.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 7:
-                    letra = "G";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/G.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 8:
-                    letra = "H";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/H.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 9:
-                    letra = "I";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/I.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 10:
-                    letra = "J";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/J.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 11:
-                    letra = "K";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/K.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 12:
-                    letra = "L";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/L.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 13:
-                    letra = "M";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/M.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 14:
-                    letra = "N";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/N.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 15:
-                    letra = "O";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/O.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-                case 16:
-                    letra = "P";
-                    try {
-                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/P.png"))));
-            } catch (IOException ex) {
-                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                    break;
-            }
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+        try {                                         
+            jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            jLabel7.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            jLabel8.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/Z.png"))));
+            
+            jToggleButton1.setEnabled(true);
+            jToggleButton2.setEnabled(true);
+            jToggleButton3.setEnabled(true);
+            jToggleButton4.setEnabled(true);
+            jToggleButton5.setEnabled(true);
+            jToggleButton6.setEnabled(true);
+            jToggleButton7.setEnabled(true);
+            jToggleButton8.setEnabled(true);
+            jToggleButton9.setEnabled(true);
+            jToggleButton10.setEnabled(true);
+            jToggleButton11.setEnabled(true);
+            jToggleButton12.setEnabled(true);
+            jToggleButton13.setEnabled(true);
+            jToggleButton14.setEnabled(true);
+            jToggleButton15.setEnabled(true);
+            jToggleButton16.setEnabled(true);
+
+            try {
+                Random generadorNum = new Random();
+                String letrasGeneradas = "";
+                String URL = "";
+                int contador;
+
+                for (contador = 0; contador <= 16; contador++) {
+                    letrasGeneradas += (char) ('A' + generadorNum.nextInt(15));
+                    for (contador = 0; contador < letrasGeneradas.length(); contador++) {
+                        URL = "/imagenes/" + letrasGeneradas.charAt(contador) + ".png";
+                        if (contador == 0) {
+                            if ((letrasGeneradas.indexOf(0) == letrasRecordadas.indexOf(0)) || (letrasGeneradas.indexOf(0) == letrasRecordadas.indexOf(1)) || (letrasGeneradas.indexOf(0) == letrasRecordadas.indexOf(2)) || (letrasGeneradas.indexOf(0) == letrasRecordadas.indexOf(3))){
+                            jToggleButton1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                            jToggleButton1.setSelected(true);
+                            }
+                            else{
+                                jToggleButton1.setSelected(false);
+                            }
+                        }                      
+                        if (contador == 1) {
+                            jToggleButton2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 2) {
+                            jToggleButton3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 3) {
+                            jToggleButton4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 4) {
+                            jToggleButton5.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 5) {
+                            jToggleButton6.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 6) {
+                            jToggleButton7.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 7) {
+                            jToggleButton8.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 8) {
+                            jToggleButton9.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 9) {
+                            jToggleButton10.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 10) {
+                            jToggleButton11.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 11) {
+                            jToggleButton12.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 12) {
+                            jToggleButton13.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 13) {
+                            jToggleButton14.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 14) {
+                            jToggleButton15.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                        if (contador == 15) {
+                            jToggleButton16.setIcon(new ImageIcon(ImageIO.read(getClass().getResource(URL))));
+                        }
+                    }
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } catch (IOException ex) {
+            Logger.getLogger(Practica3.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -809,16 +501,22 @@ public class Practica3 extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Practica3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Practica3.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Practica3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Practica3.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Practica3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Practica3.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Practica3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Practica3.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -832,10 +530,15 @@ public class Practica3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
