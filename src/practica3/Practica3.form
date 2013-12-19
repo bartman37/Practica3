@@ -70,9 +70,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" pref="64" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel7" min="-2" pref="64" max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" pref="64" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel8" min="-2" pref="64" max="-2" attributes="0"/>
+                  <Component id="jLabel6" min="-2" pref="64" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -83,8 +83,8 @@
               <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-              <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-              <Component id="jLabel8" alignment="0" max="32767" attributes="0"/>
+              <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+              <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -117,7 +117,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[64, 64]"/>
@@ -130,7 +130,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[64, 64]"/>
@@ -382,8 +382,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel5" max="32767" attributes="0"/>
-                              <Component id="jLabel6" max="32767" attributes="0"/>
+                              <Component id="jLabel9" max="32767" attributes="0"/>
+                              <Component id="jLabelAciertos" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -401,9 +401,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel6" pref="28" max="32767" attributes="0"/>
+                  <Component id="jLabelAciertos" pref="28" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -430,13 +430,16 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Comprobar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
             <Property name="text" type="java.lang.String" value="Aciertos"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="jLabelAciertos">
         </Component>
       </SubComponents>
     </Container>
